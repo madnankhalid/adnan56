@@ -6,8 +6,7 @@
   push:
     branches: [ master ]
 
-
-Jobs:
+- Jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
@@ -31,7 +30,7 @@ Jobs:
 -  name: Creating Build
    run: yarn build
 
-  - name: installing surge
+- name: installing surge
     run: npm install -g surge
 
   - name: deploying on surge
